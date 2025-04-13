@@ -19,6 +19,8 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -32,6 +34,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.shopping_application.ui.theme.Pink40
@@ -39,11 +42,10 @@ import com.example.shopping_application.ui.theme.pink
 
 
 @Composable
-fun homeUI(){
+fun HomeUI(){
     Box(modifier = Modifier
         .fillMaxSize()
         .background(Color.White)) {
-        // Add your UI components here
         Column(modifier = Modifier.fillMaxSize()) {
             Row(
                 modifier = Modifier
@@ -67,13 +69,13 @@ fun homeUI(){
                     button(icon = R.drawable.baseline_search)
                 }
             }
-        }
-        Card(modifier = Modifier.fillMaxWidth()) {
-            LazyVerticalGrid(columns = GridCells.Fixed(2), content =  {
-                 items(shoppingData.shoppingItems) { item ->
-                     ShowSuit(data = item)
-                 }
-            })
+            Card(modifier = Modifier.fillMaxWidth()) {
+                LazyVerticalGrid(columns = GridCells.Fixed(2), content =  {
+                    items(shoppingData.shoppingItems) { item ->
+                        ShowSuit(data = item)
+                    }
+                })
+            }
         }
     }
 }
@@ -97,8 +99,38 @@ fun ShowSuit(data: shoppingData.ShoppingItem) {
                         horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Image(
-                        painter = painterResource(id = data.img), contentDescription = "" ,
-                        modifier = Modifier.size(109.dp).clip(CircleShape), contentScale = ContentScale.Crop)
+                        painter = painterResource(id = data.img),
+                        contentDescription = "" ,
+                        modifier = Modifier
+                            .size(109.dp)
+                            .clip(CircleShape),
+                        contentScale = ContentScale.Crop)
+                    Text(
+                        text = data.price,
+                        style = TextStyle(fontSize = 14.sp,
+                            fontWeight = FontWeight.W700,
+                            color = Color.Red),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(text = data.description,
+                        style = TextStyle(fontSize = 16.sp,
+                            fontWeight = FontWeight.W700,
+                            color = Color.Black),
+                        textAlign = TextAlign.Center
+                    )
+                    Button(onClick = { /*TODO*/ },
+                        modifier = Modifier.width(91.dp),
+                        shape = RoundedCornerShape(18.dp),
+                        colors = ButtonDefaults.buttonColors(
+                        containerColor = pink
+                    )) {
+                        Text(text = "Add",
+                            style = TextStyle(fontSize = 14.sp,
+                                fontWeight = FontWeight.W700,
+                                color = Color.White),
+                            textAlign = TextAlign.Center
+                        )
+                    }
 
                 }
         }
