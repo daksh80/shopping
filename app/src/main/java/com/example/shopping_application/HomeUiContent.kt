@@ -42,35 +42,34 @@ import com.example.shopping_application.ui.theme.pink
 
 
 @Composable
-fun HomeUI(){
+fun HomeUI() {
     Box(modifier = Modifier
         .fillMaxSize()
-        .background(Color.White)) {
+        .background(Color.White)
+    ) {
         Column(modifier = Modifier.fillMaxSize()) {
             Row(
                 modifier = Modifier
                     .background(pink)
                     .fillMaxWidth()
-                    .height(56.dp)
+                    .height(100.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
             ) {
-                button(icon = R.drawable.baseline_menu_24,Color.White)
-                Column(modifier = Modifier.fillMaxHeight(),
-                    verticalArrangement = Arrangement.Center) {
-                    Text(text = "Home",
+                button(icon = R.drawable.baseline_menu_24, Color.White)
+                Text(
+                    text = "Home",
+                    color = Color.Black,
+                    style = TextStyle(
+                        fontSize = 20.sp,
                         color = Color.Black,
-                        style = TextStyle(
-                            fontSize = 20.sp,
-                            color = Color.Black,
-                            fontWeight = FontWeight.Light)
+                        fontWeight = FontWeight.Light
                     )
-                }
-                Row(modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.End) {
-                    button(icon = R.drawable.baseline_search)
-                }
+                )
+                button(icon = R.drawable.baseline_search)
             }
             Card(modifier = Modifier.fillMaxWidth()) {
-                LazyVerticalGrid(columns = GridCells.Fixed(2), content =  {
+                LazyVerticalGrid(columns = GridCells.Fixed(2), content = {
                     items(shoppingData.shoppingItems) { item ->
                         ShowSuit(data = item)
                     }
@@ -87,15 +86,16 @@ fun ShowSuit(data: shoppingData.ShoppingItem) {
         shape = RoundedCornerShape(5.dp),
         modifier = Modifier
             .width(175.dp)
-            .height(300.dp)
-            .padding(vertical = 5.dp, horizontal = 5.dp)
+            .height(250.dp)
+            .padding(vertical = 7.dp, horizontal = 7.dp)
     ){
         Box(modifier = Modifier.fillMaxWidth(),
             contentAlignment = Alignment.Center){
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(vertical = 5.dp, horizontal = 5.dp),
+                        .padding(vertical = 7.dp, horizontal = 7.dp)
+                        .background(Color.White),
                         horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Image(

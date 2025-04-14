@@ -32,6 +32,146 @@ object shoppingData {
             name = "Bag",
             description = "This is a bag",
             price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
+        ),
+        ShoppingItem(
+            img = R.drawable.anxiety,
+            id = 3,
+            name = "Bag",
+            description = "This is a bag",
+            price = "$10"
         )
     )
 }
